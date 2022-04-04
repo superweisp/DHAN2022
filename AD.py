@@ -36,11 +36,11 @@ parser.add_argument('--conv_name', type=str, default='dgat',
                     help='The name of GNN filter. By default is Heterogeneous Graph Transformer (hgt)')
 parser.add_argument('--n_hid', type=int, default=128,
                     help='Number of hidden dimension')
-parser.add_argument('--n_heads', type=int, default=8,
+parser.add_argument('--n_heads', type=int, default=1,
                     help='Number of attention head')
 parser.add_argument('--n_layers', type=int, default=1,
                     help='Number of HeteGAT layers')
-parser.add_argument('--dropout', type=float, default=0.2,
+parser.add_argument('--dropout', type=float, default=0.1,
                     help='Dropout ratio')
 parser.add_argument('--sample_depth', type=int, default=6,
                     help='How many numbers to sample the graph')
@@ -59,7 +59,7 @@ parser.add_argument('--optimizer', type=str, default='adamw',
                     help='optimizer to use.')
 parser.add_argument('--data_percentage', type=float, default=1.0,
                     help='Percentage of training and validation data to use')
-parser.add_argument('--n_epoch', type=int, default=60,
+parser.add_argument('--n_epoch', type=int, default=200,
                     help='Number of epoch to run')
 parser.add_argument('--n_pool', type=int, default=4,
                     help='Number of process to sample subgraph')
