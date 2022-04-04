@@ -31,8 +31,8 @@ parser.add_argument('--dataset', type=str, default='c1.0s',
 '''
    Model arguments
 '''
-parser.add_argument('--conv_name', type=str, default='hrgat',
-                    choices=['hgt', 'dense_hgt','hrgat','rgsn','dgat','dhan1','dhan3','v1','v2','v3','v4'],
+parser.add_argument('--conv_name', type=str, default='dgat',
+                    choices=['dgat'],
                     help='The name of GNN filter. By default is Heterogeneous Graph Transformer (hgt)')
 parser.add_argument('--n_hid', type=int, default=128,
                     help='Number of hidden dimension')
